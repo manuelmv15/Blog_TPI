@@ -20,7 +20,7 @@ class Route{
         
        
         $method = $_SERVER["REQUEST_METHOD"];
-        //echo "Url".$uri."<br>";
+       // echo "Url".$uri."<br>";
         //var_dump(self::$routes);
         foreach(self::$routes[$method] as $url=>$funcion){
             if(strpos($url, ":")!==false){

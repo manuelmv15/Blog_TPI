@@ -13,9 +13,6 @@ class controller{
         else{
             echo "vista no encotrada ../app/views/$vista.php";
         }
-        return "hola desde la pagina Home";
-
-
     }
 }
 ?>

@@ -114,6 +114,7 @@ p { margin: 0 0 10px; color: var(--muted); }
   align-items: center;
   justify-content: center;
   margin-right: 24px;
+  border-radius: 10px;
 }
 
 .avatar {

@@ -19,9 +19,9 @@
             <h1 class="profile-title">Mi Información</h1>
 
             <div class="profile-display">
-                <div class="profile-photo">
+                <div class="profile-photo hero">
                     <img
-                        class="avatar"
+                        class="avatar "
                         src="../public/img/fotoPerfil.jpeg"
                         alt="Foto de perfil"
                 </div>

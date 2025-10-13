@@ -101,3 +101,35 @@ p { margin: 0 0 10px; color: var(--muted); }
 .list { margin: 8px 0 0; padding-left: 1.1rem; }
 .list li { margin-bottom: 6px; }
 
+
+.profile-title { margin-bottom: 12px; }
+
+.profile-display {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.avatar {
+  width: 360px;
+  aspect-ratio: 1 / 1;
+  border-radius: 1px;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  display: block;
+}
+
+.profile-details  {
+  
+  margin: 20px;
+}
+.profile-details p {
+
+  margin-bottom: 8px;
+}

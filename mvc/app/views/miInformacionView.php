@@ -14,11 +14,28 @@
     </header>
 
     <main class="container content">
+        <section class="card profile">
 
-        
+            <h1 class="profile-title">Mi Información</h1>
+
+            <div class="profile-display">
+                <div class="profile-photo">
+                    <img
+                        class="avatar"
+                        src="../public/img/fotoPerfil.jpeg"
+                        alt="Foto de perfil"
+                </div>
+
+                <div class="profile-details">
+                    <p><strong>Nombre:</strong> Carlos Manuel Melendez Villatoro</p>
+                    <p><strong>Carnet:</strong> MV23036</p>
+                    <p><strong>Edad:</strong> 20 años</p>
+                    <p><strong>Intereses:</strong> Programación, Música, Viajes</p>
+                    <p><strong>Correo:</strong> mv23036@ues.edu.sv</p>
+                </div>
+            </div>
+        </section>
     </main>
-
-   
 </body>
 
 </html>

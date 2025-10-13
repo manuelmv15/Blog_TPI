@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
-
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
-<body>
+<body class="site">
+    <header class="navbar">
+        <?php include 'partials/navbar.php'; ?>
+    </header>
 
-    <div>
-        <div>
-            <?php
-            include __DIR__ . '/partials/navbar.php'; ?>
+    <main class="container content">
 
-        </div>
-        <div>
+        
+    </main>
 
-        </div>
-
+   
 </body>
 
 </html>

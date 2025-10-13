@@ -5,7 +5,7 @@ use PDOException;
 
 class Database {
     private $host = "db";
-    private $db_name = "db_ejemplo";
+    private $db_name = "DB_SDS";
     private $username = "root";
     private $password = "rootpass";
     public $conn;
@@ -20,7 +20,7 @@ class Database {
             );
             $this->conn->exec("set names utf8");
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            // echo "Conectado correctamente";
+           //  echo "Conectado correctamente";
         } catch(PDOException $exception) {
             echo "Error de conexión: " . $exception->getMessage();
         }

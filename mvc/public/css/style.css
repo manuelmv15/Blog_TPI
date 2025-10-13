@@ -1,6 +1,6 @@
 :root {
 
-  --bg: #0f172a;       /* fondo principal */
+  --bg: #0f172a ;       /* fondo principal */
   --surface: #111827;  /* tarjetas / navbar */
   --text: #e5e7eb;     /* texto principal */
   --muted: #94a3b8;    /* texto secundario */
@@ -133,3 +133,23 @@ p { margin: 0 0 10px; color: var(--muted); }
 
   margin-bottom: 8px;
 }
+
+/* registrar visita  */
+
+
+.form{
+  display: flex;
+}
+
+.form-display {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+

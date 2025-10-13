@@ -23,4 +23,7 @@ Route::get("/mi-informacion", [miInformacionController::class, "index"]);
 
 Route::get("/registrar-visita", [registrarVisitaController::class, "index"]);
 
+Route::post("/guardarPersona", [registrarVisitaController::class, "guardarPersona"]); 
+
+
 Route::dispatch();

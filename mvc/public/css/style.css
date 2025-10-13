@@ -1,0 +1,103 @@
+:root {
+
+  --bg: #0f172a;       /* fondo principal */
+  --surface: #111827;  /* tarjetas / navbar */
+  --text: #e5e7eb;     /* texto principal */
+  --muted: #94a3b8;    /* texto secundario */
+  --primary: #60a5fa;  /* acento */
+  --primary-strong: #3b82f6; /* acento fuerte para hover/active */
+  --border: #1f2937;   /* bordes */
+
+  --radius: 12px;
+  --space: 16px;
+  --maxw: 1100px;
+}
+
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body.site {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans";
+  line-height: 1.6;
+}
+
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--space);
+}
+
+
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px var(--space);
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+.brand {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.nav-list {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+}
+.nav-link {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--surface);
+}
+.nav-link:hover {
+  background: #1e293b;
+  border-color: #243042;
+}
+.nav-link.active,
+.nav-link[aria-current="page"] {
+  background: var(--primary);
+  color: #0b1020; 
+  border-color: var(--primary-strong);
+}
+
+
+.content {
+  display: grid;
+  gap: 16px;
+  padding-block: 20px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.hero {
+  border-left: 4px solid var(--primary);
+}
+h1, h2 { margin: 0 0 8px; }
+p { margin: 0 0 10px; color: var(--muted); }
+
+
+.list { margin: 8px 0 0; padding-left: 1.1rem; }
+.list li { margin-bottom: 6px; }
+

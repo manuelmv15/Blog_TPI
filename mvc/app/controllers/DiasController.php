@@ -6,18 +6,8 @@ use lib\controller;
 
 class DiasController extends controller
 {
-
-    public function index()
-    {
-        return $this->view('lunesView', [
-            'title' => 'Lunes'
-        ]);
-    }
-
-
     public function lunes()
     {
-        echo "hola desde la pagina lunes";
         return $this->view('lunesView', [
             'title' => 'Lunes'
         ]);

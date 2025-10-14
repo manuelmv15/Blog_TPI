@@ -15,7 +15,29 @@
 
     <main class="container content">
 
+
+    <section class="card hero">
+        <h1>Bienvenido a la sección de Lunes</h1>
+    </section>
+
+    <section class="card">
+
+     <h1>Bienvenido </h1>
+<p></p>
+
+    </section>
         
+    <section class="card">
+        <h1>ABC del Bitcoin</h1>
+    </section>
+
+    <section class="card">
+        <h1>Inteligencia artificial generativa, de la idea a la acción</h1>
+    </section>
+
+    <section class="card">
+        <h1>Imagenes</h1>
+    </section>
     </main>
 
    

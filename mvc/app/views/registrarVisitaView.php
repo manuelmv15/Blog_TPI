@@ -62,10 +62,14 @@
                 <?php foreach ($personas as $p): ?>
                     <li class="people-item">
                         <span class="people-name">
-                            <?= htmlspecialchars($p['nombre']) ?> <?= htmlspecialchars($p['apellido']) ?>
+                            <?= ($p['nombre']) ?> <?= ($p['apellido']) ?>
                         </span>
                         <span class="people-meta">
-                            <?= htmlspecialchars($p['correo']) ?> · <?= htmlspecialchars($p['edad']) ?> años
+                            <?= ($p['correo']) ?> · <?= ($p['edad']) ?> años
+                        </span>
+
+                        <span class="people-meta">
+                            <?= ($p['fecha_creacion']) ?>
                         </span>
                     </li>
                 <?php endforeach; ?>

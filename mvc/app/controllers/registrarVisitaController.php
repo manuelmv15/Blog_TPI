@@ -16,6 +16,11 @@ class registrarVisitaController extends controller{
     }
 
    public function guardarPersona() {
+         $model = new PersonaModel();
+
+
+        $personas = $model->getPersona();
+
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         
@@ -42,7 +47,8 @@ class registrarVisitaController extends controller{
 
             return $this->view('registrarVisitaView', [
                 'title' => 'Error al guardar',
-                'errores' => $errores
+                'errores' => $errores,
+                'personas' => $personas
             ]);
         }
 
@@ -54,17 +60,11 @@ class registrarVisitaController extends controller{
             'correo' => $correo
         ];
 
-        $model = new PersonaModel();
-
-
-        $personas = $model->getPersona();
+   
 
         if ($model->guardarPersona($data)) {
             
-            return $this->view('registrarVisitaView', [
-                'title' => 'Registro exitoso',
-                'personas' => $personas
-            ]);
+            return $this->index();
         } else {
 
 

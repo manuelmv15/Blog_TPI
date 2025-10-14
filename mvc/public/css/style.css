@@ -209,3 +209,49 @@ p { margin: 0 0 10px; color: var(--muted); }
   font-size: 0.9rem;
   margin-top: 4px;
 }
+
+
+/* Carrusel */
+/* Carrusel horizontal, sólido (oscuro) */
+.carousel{
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0;           /* sin padding para que la img llene */
+  overflow: hidden;
+}
+
+.carousel-viewport{ overflow: hidden; }
+
+.carousel-track{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;               /* sin espacio entre slides */
+  will-change: transform;
+}
+
+.slide{
+  flex: 0 0 100%;       /* ocupa todo el ancho visible */
+  height: min(70vh, 56vw);  /* alto responsive (≈16:9) */
+  border: 0;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Botones un poco más grandes */
+.carousel-btn{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:44px; height:44px; border:1px solid var(--border);
+  border-radius:10px; background:#0b1224; color:var(--text);
+  font-size:24px; cursor:pointer;
+}
+.carousel-btn:hover{ background:#1e293b; }
+.carousel-btn.prev{ left:12px; }
+.carousel-btn.next{ right:12px; }

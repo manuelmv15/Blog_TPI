@@ -16,31 +16,41 @@
     <main class="container content">
 
 
-    <section class="card hero">
-        <h1>Bienvenido a la sección de Lunes</h1>
-    </section>
+        <section class="card hero">
+            <h1>Bienvenido a la sección de Lunes</h1>
+        </section>
 
-    <section class="card">
+        <section class="card">
+            <h1>ABC del Bitcoin</h1>
+        </section>
 
-     <h1>Bienvenido </h1>
-<p></p>
+        <section class="card">
+            <h1>Inteligencia artificial generativa, de la idea a la acción</h1>
+        </section>
 
-    </section>
-        
-    <section class="card">
-        <h1>ABC del Bitcoin</h1>
-    </section>
+        <section class="card">
+            <h1>Imagenes</h1>
 
-    <section class="card">
-        <h1>Inteligencia artificial generativa, de la idea a la acción</h1>
-    </section>
+            <div class="carousel" id="carousel">
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <?php for ($i = 1; $i <= 25; $i++): ?>
+                            <div class="slide">
+                                <img src="../public/img/lunes/img<?= $i ?>.jpeg" alt="imagen <?= $i ?>">
+                            </div>
+                        <?php endfor; ?>
+                    </div>
+                </div>
 
-    <section class="card">
-        <h1>Imagenes</h1>
-    </section>
+                <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                <button class="carousel-btn next" aria-label="Siguiente">›</button>
+            </div>
+
+        </section>
     </main>
 
-   
+    <script src="../public/js/carrucel.js"></script>
+
 </body>
 
 </html>

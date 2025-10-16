@@ -15,10 +15,13 @@
 
     <main class="container content">
 
-        
+        <section class="card hero ">
+            <h1>No hubieron actividades por lluvias</h1>
+        </section>
+
     </main>
 
-   
+
 </body>
 
 </html>

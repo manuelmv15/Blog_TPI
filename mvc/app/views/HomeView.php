@@ -35,12 +35,11 @@
                 <li>Martes: Talleres</li>
                 <li>Miercoles: Torneo de futbol 11</li>
                 <li>Jueves: Feria de logros y Comelona de pupusas</li>
-                <li>Viernes: Bingo, Torneo de videojuegos y Fiesta</li>
+                <li>Viernes: Bingo, Torneo de videojuegos y Fiesta.</li>
             </ul>
         </section>
     </main>
 
-   
 </body>
 
 </html>
